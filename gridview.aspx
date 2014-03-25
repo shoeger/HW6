@@ -10,10 +10,36 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Recipes %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Recipes %>" DeleteCommand="DELETE FROM [Table] WHERE [reID] = @reID" InsertCommand="INSERT INTO [Table] ([reName], [reSubmit], [reIngredient1], [reIngredient2], [reIngredient3], [reIngredient4], [rePreparation], [reNotes]) VALUES (@reName, @reSubmit, @reIngredient1, @reIngredient2, @reIngredient3, @reIngredient4, @rePreparation, @reNotes)" SelectCommand="SELECT * FROM [Table]" UpdateCommand="UPDATE [Table] SET [reName] = @reName, [reSubmit] = @reSubmit, [reIngredient1] = @reIngredient1, [reIngredient2] = @reIngredient2, [reIngredient3] = @reIngredient3, [reIngredient4] = @reIngredient4, [rePreparation] = @rePreparation, [reNotes] = @reNotes WHERE [reID] = @reID">
+            <DeleteParameters>
+                <asp:Parameter Name="reID" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="reName" Type="String" />
+                <asp:Parameter Name="reSubmit" Type="String" />
+                <asp:Parameter Name="reIngredient1" Type="String" />
+                <asp:Parameter Name="reIngredient2" Type="String" />
+                <asp:Parameter Name="reIngredient3" Type="String" />
+                <asp:Parameter Name="reIngredient4" Type="String" />
+                <asp:Parameter Name="rePreparation" Type="String" />
+                <asp:Parameter Name="reNotes" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="reName" Type="String" />
+                <asp:Parameter Name="reSubmit" Type="String" />
+                <asp:Parameter Name="reIngredient1" Type="String" />
+                <asp:Parameter Name="reIngredient2" Type="String" />
+                <asp:Parameter Name="reIngredient3" Type="String" />
+                <asp:Parameter Name="reIngredient4" Type="String" />
+                <asp:Parameter Name="rePreparation" Type="String" />
+                <asp:Parameter Name="reNotes" Type="String" />
+                <asp:Parameter Name="reID" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Width="1053px">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Width="1053px">
             <Columns>
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="reID" HeaderText="Recipe ID" InsertVisible="False" ReadOnly="True" SortExpression="reID" />
                 <asp:BoundField DataField="reName" HeaderText="Name" SortExpression="reName" />
                 <asp:BoundField DataField="reSubmit" HeaderText="Submit" SortExpression="reSubmit" />
