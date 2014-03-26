@@ -39,6 +39,12 @@
                 <asp:Parameter Name="reID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+          <br />
+        <a href="Default.aspx">Home</a>
+        <br />
+        <a href="Recipes.aspx">Veiw all recipes</a>
+        <br />
+        <a href="newrecipe.aspx">Add a new recipe</a>
         <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Height="50px" Width="277px">
             <Fields>

@@ -40,6 +40,11 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <a href="Default.aspx">Home</a>
+        <br />
+        <a href="Recipes.aspx">Veiw all recipes</a>
+        <br />
+        
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Height="50px" Width="277px" DefaultMode="Insert">
             <Fields>
                 <asp:BoundField DataField="reName" HeaderText="Name" SortExpression="reName" />
