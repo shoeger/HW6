@@ -5,20 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="Stylesheet" type="text/css" href="./stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+   <div id="wrap">  
+    <h1> Wicked Easy Reciepes </h1>
+    <h2> Using 5 Ingredients or Less </h2>
     
-        Welcome to our Recipe Book <br /><br />
+         <div id="nav">
+	<ul>
+        <li> <a href="Default.aspx">Home</a></li>
+		<li> <a href="Recipes.aspx">Recipes</a>  </li> 
+		<li> <a href="newrecipe.aspx">New Reciepe</a> </li> 
+        <li> <a href="aboutus.aspx">About</a> </li> 
+		<li> <a href="contactus.aspx">Contact Us</a> </li>
+	</ul>
+        </div>
 
-        <a href="Recipes.aspx">View all pages</a>
-        <br />
-        <a href="newrecipe.aspx">Add a new recipe</a>
+        
 
         <br /><br />
 
-        <img alt="Recipe Book" title="Recipe Book" src="./Images/recipebook.gif" />
+        <img alt="Recipe Book" title="Recipe Book" src="./Images/recipebook.gif" class="textCenter" />
 
     </div>
     </form>
