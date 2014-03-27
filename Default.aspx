@@ -29,6 +29,8 @@
 
         <img alt="Recipe Book" title="Recipe Book" src="./Images/recipebook.gif" class="textCenter" />
 
+       <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
+
     </div>
     </form>
 </body>

@@ -33,6 +33,8 @@
 Mauris in urna nec dui tristique ultrices. Aenean congue, nibh non egestas lobortis, odio odio varius eros, vel rutrum felis mauris varius lacus. Maecenas vel dapibus sapien. Duis ultrices malesuada massa et placerat. Quisque lorem erat, facilisis sit amet dui at, condimentum hendrerit dui. Maecenas semper odio vitae mauris euismod, non dignissim dolor varius. Sed aliquet tortor in leo aliquet vehicula. Etiam sem nulla, pretium sed mattis vitae, varius a urna. 
 </p>
     </div>
+
+         <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
     
     </div>
     </form>

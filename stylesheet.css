@@ -6,10 +6,10 @@
     width: 1240px;
     margin: auto;
     background: tan;
-    border-left: solid 10px coral;
-    border-right: solid 10px coral;
-    border-top: solid 10px coral;
-    border-bottom: solid 10px coral;
+    border-left: solid 30px coral;
+    border-right: solid 30px coral;
+    border-top: solid 30px coral;
+    border-bottom: solid 30px coral;
     height: 800px;
     padding-top: 20px;
     text-align: left;
@@ -31,12 +31,10 @@ h2 {
     font-size: 20pt;
 }
 
-#image {
-    text-align: center;
-}
+
 
 #footer {
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
@@ -51,10 +49,10 @@ p { color: black; font-size: 12pt; text-align: left; padding-left: 300pt; paddin
 
 
 .grid-view {
-    background-color: lightgoldenrodyellow;
+    background-color: coral;
     width: auto;
     margin: 5px 0 10px 0;
-    border: solid 2px coral;
+    border: solid 2px white;
     border-collapse: collapse;
     text-align: center;
     color: black;
@@ -73,15 +71,15 @@ p { color: black; font-size: 12pt; text-align: left; padding-left: 300pt; paddin
 
     .grid-view td {
         padding: 10px;
-        border: solid 2px coral;
-        color: black;
+        border: solid 2px white;
+        color: white;
     }
 
 
     .grid-view th {
         padding: 10px;
-        color: lightgoldenrodyellow;
-        border-left: solid 2px coral;
+        color: coral;
+        border-left: solid 2px white;
     }
    
     /*End grid-view style*/

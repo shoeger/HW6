@@ -68,6 +68,8 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
+
+        <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
     
     </div>
     </form>
